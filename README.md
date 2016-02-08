@@ -30,7 +30,11 @@ interactions between the user and the keyboard.
 ## Notes and Examples
 
 [Setup video from last semester](https://youtu.be/qY8V69PxP8Q)
+
 [Boring but pretty keyboard](https://cdn0.vox-cdn.com/thumbor/qaDoESKR2hFs2I3mK53TZbj59os=/1000x0/filters:no_upscale%28%29/cdn0.vox-cdn.com/uploads/chorus_asset/file/923634/IMG_0274.0.PNG)
+
 [Kaomoji Keyboard](http://i.imgur.com/MDNB94z.jpg)
+
 [SwiftKey](https://cdn3.vox-cdn.com/thumbor/aunHOJvl8DJWuezzt8Dlls7SyLs=/1000x0/filters:no_upscale%28%29/cdn0.vox-cdn.com/uploads/chorus_asset/file/924270/SwiftKey_screenshot_1.0.jpg)
+
 [Kanye Keyboard](https://raw.githubusercontent.com/SamStone92/kanyekeyboad/master/screenshots/2.png)
