@@ -11,6 +11,7 @@ import UIKit
 class KeyboardViewController: UIInputViewController {
 
     @IBOutlet var nextKeyboardButton: UIButton!
+    @IBOutlet var deleteButton: UIButton!
     
     var keyboardView: UIView!
 
@@ -23,8 +24,25 @@ class KeyboardViewController: UIInputViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadInterface()
+        let buttonTitles = ["Q", "W", "E", "R", "T", "Y"]
+       
+        
     }
 
+    @IBAction func keyPressed(sender: AnyObject?) {
+        let button = sender as! UIButton
+        let title = button.titleForState(.Normal)
+        (textDocumentProxy as UIKeyInput).insertText(title!)
+    }
+    
+    @IBAction func deleteKey(sender: AnyObject?) {
+        print("Did I reach deleteKey?",title)
+        (textDocumentProxy as UIKeyInput).deleteBackward()    }
+    
+    @IBAction func returnButton(sender: AnyObject?) {
+        print("Did I reach returnButton?",title)
+        (textDocumentProxy as UIKeyInput).insertText("\r\n")   }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated
@@ -45,7 +63,8 @@ class KeyboardViewController: UIInputViewController {
         view.addSubview(keyboardView)
         view.backgroundColor = keyboardView.backgroundColor
         nextKeyboardButton.addTarget(self, action: "advanceToNextInputMode", forControlEvents: .TouchUpInside) // advanceToNextInputMode is already defined in template
-        
+//        deleteButton.addTarget(self, action: "keyPressed", forControlEvents: .TouchUpInside)
+        print("passed loadinterface")
     }
 
 
